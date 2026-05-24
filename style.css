@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.habit-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.habit-input input {
+  flex: 1;
+  padding: 12px;
+}
+
+.habit-input button {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.week-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.week-nav button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+}
+
+.check-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.checked {
+  background: green;
+  color: white;
+}
+
+.today {
+  background: #fff2cc;
+}
+
+.habit-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 5px;
+  padding: 4px 8px;
+}
+
+#emptyState {
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 600px) {
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
